@@ -1,0 +1,14 @@
+.cursor-pointer,
+.nav-tabs .nav-link {
+    cursor: pointer;
+}
+
+.break-word {
+    word-break: break-word;
+}
+.no-wrap {
+    white-space: nowrap;
+    td, th {
+        white-space: nowrap;
+    }
+}
