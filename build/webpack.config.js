@@ -57,9 +57,9 @@ module.exports = {
     extensions: [".jsx", ".js"],
     modules: [resolve("node_modules")],
     alias: {
-      "@": resolve("src"),
-      "@icons": resolve("src/components/icons"),
-      "@links": resolve("src/components/links"),
+      src: resolve("src"),
+      icons: resolve("src/components/icons"),
+      links: resolve("src/components/links"),
       lodash$: "lodash-es"
     }
   },
