@@ -1,3 +1,4 @@
+const path = require("path");
 const merge = require("webpack-merge");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const CircularDependencyPlugin = require("circular-dependency-plugin");
@@ -8,16 +9,17 @@ const config = require("./webpack.config");
 
 module.exports = merge(config, {
   mode: "development",
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: "dist",
+    publicPath: "/",
+    historyApiFallback: {
+      index: "index.html"
+    }
+  },
   plugins: [
     new BrowserSyncPlugin({
-      //proxy: process.env.DEV_URL || "127.0.0.1",
-      server: {
-        baseDir: ".",
-        index: "./public/index.html"
-      },
-      routes: {
-        "/dist": "dist"
-      },
+      proxy: process.env.DEV_URL || "127.0.0.1:8080",
       open: true,
       ghostMode: false
     }),

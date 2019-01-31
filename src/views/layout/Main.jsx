@@ -23,6 +23,11 @@ export default class Main extends PureComponent {
             <Route
               path="/"
               exact
+              component={Loadable(() => import("src/views/aboutMe"))}
+            />
+            <Route
+              path="/resume"
+              exact
               component={Loadable(() => import("src/views/resume"))}
             />
           </Switch>

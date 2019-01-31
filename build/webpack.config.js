@@ -2,16 +2,16 @@ const path = require("path");
 const webpack = require("webpack");
 const { resolve } = require("./utils");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
     main: resolve("src/index.jsx"),
-    bootstrap: "bootstrap"
+    bootstrap: "bootstrap",
+    resetCSS: "reset-css"
   },
   output: {
-    publicPath: "/dist/",
+    publicPath: "/",
     filename: "[name].[contentHash].js",
     chunkFilename: "[name].[chunkhash].js"
   },
@@ -69,12 +69,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: resolve("src/index.html"),
-      filename: resolve("public/index.html"),
       chunks: ["runtime", "bootstrap", "main"],
       inject: true
-    }),
-    new CleanWebpackPlugin(["dist"], {
-      root: resolve("./")
     }),
     new webpack.HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin({
