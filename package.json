@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "cross-env APP_ENV=develop webpack-dev-server --colors --progress --config build/webpack.dev.config.js",
     "build": "cross-env APP_ENV=develop webpack --colors --progress --config build/webpack.dev.config.js",
-    "build:prod": "cross-env APP_ENV=production webpack --colors --progress --config build/webpack.prod.config.js",
-    "server": "cross-env APP_ENV=production nodemon server.js"
+    "build:prod": "webpack --colors --progress --config build/webpack.prod.config.js",
+    "server": "nodemon server.js"
   },
   "license": "ISC",
   "dependencies": {
@@ -54,7 +54,6 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "circular-dependency-plugin": "^5.0.2",
     "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
     "eslint": "^5.4.0",
