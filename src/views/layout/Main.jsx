@@ -30,6 +30,11 @@ export default class Main extends PureComponent {
               exact
               component={Loadable(() => import("src/views/resume"))}
             />
+            <Route
+              path="/experiments"
+              exact
+              component={Loadable(() => import("src/views/experiments"))}
+            />
           </Switch>
         </BrowserRouter>
       </Container>

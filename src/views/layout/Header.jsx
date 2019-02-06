@@ -28,15 +28,7 @@ class Header extends PureComponent {
               </NavItem>
 
               <NavItem>
-                <NavLink href="#">PORTFOLIO</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#">BLOG</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#">CONTACT</NavLink>
+                <NavLink href="/experiments">EXPERIMENTS</NavLink>
               </NavItem>
             </Nav>
           </Col>
