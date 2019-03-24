@@ -16,60 +16,80 @@ export default class SectionSkills extends PureComponent {
               <Col md={4} sm={4} xs={4}>
                 <ul className="skill-list">
                   <li>
-                    <h3>Skill 1</h3>
+                    <h3>PHP</h3>
+                    <Progress value={90} />
+                  </li>
+                  <li>
+                    <h3>Symfony 3/4</h3>
                     <Progress value={75} />
                   </li>
                   <li>
-                    <h3>Skill 2</h3>
-                    <Progress value={75} />
+                    <h3>Laravel</h3>
+                    <Progress value={50} />
                   </li>
                   <li>
-                    <h3>Skill 3</h3>
-                    <Progress value={75} />
+                    <h3>Kohana</h3>
+                    <Progress value={80} />
                   </li>
                   <li>
-                    <h3>Skill 4</h3>
-                    <Progress value={75} />
-                  </li>
-                </ul>
-              </Col>
-              <Col md={4} sm={4} xs={4}>
-                <ul className="skill-list">
-                  <li>
-                    <h3>Skill 1</h3>
-                    <Progress value={75} />
+                    <h3>Code Ignitor</h3>
+                    <Progress value={80} />
                   </li>
                   <li>
-                    <h3>Skill 2</h3>
-                    <Progress value={75} />
-                  </li>
-                  <li>
-                    <h3>Skill 3</h3>
-                    <Progress value={75} />
-                  </li>
-                  <li>
-                    <h3>Skill 4</h3>
-                    <Progress value={75} />
+                    <h3>Magento</h3>
+                    <Progress value={40} />
                   </li>
                 </ul>
               </Col>
               <Col md={4} sm={4} xs={4}>
                 <ul className="skill-list">
                   <li>
-                    <h3>Skill 1</h3>
+                    <h3>Javascript</h3>
+                    <Progress value={85} />
+                  </li>
+                  <li>
+                    <h3>JQuery</h3>
+                    <Progress value={80} />
+                  </li>
+                  <li>
+                    <h3>React </h3>
+                    <Progress value={70} />
+                  </li>
+                  <li>
+                    <h3>Mob X</h3>
+                    <Progress value={70} />
+                  </li>
+                  <li>
+                    <h3>D3</h3>
+                    <Progress value={40} />
+                  </li>
+                  <li>
+                    <h3>WebGL</h3>
+                    <Progress value={30} />
+                  </li>
+                </ul>
+              </Col>
+              <Col md={4} sm={4} xs={4}>
+                <ul className="skill-list">
+                  <li>
+                    <h3>CSS</h3>
+                    <Progress value={80} />
+                  </li>
+                  <li>
+                    <h3>LESS/SASS/SCSS</h3>
+                    <Progress value={78} />
+                  </li>
+                  <li>
+                    <h3>Bootstrap 3/4</h3>
                     <Progress value={75} />
                   </li>
                   <li>
-                    <h3>Skill 2</h3>
-                    <Progress value={75} />
+                    <h3>Foundation</h3>
+                    <Progress value={50} />
                   </li>
                   <li>
-                    <h3>Skill 3</h3>
-                    <Progress value={75} />
-                  </li>
-                  <li>
-                    <h3>Skill 4</h3>
-                    <Progress value={75} />
+                    <h3>Materialize </h3>
+                    <Progress value={40} />
                   </li>
                 </ul>
               </Col>
