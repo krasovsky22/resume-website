@@ -5,6 +5,8 @@ import { Col } from "reactstrap";
 import "./profile.scss";
 import { Download as DownloadIcon } from "icons";
 
+import resume from 'files/resume.pdf';
+
 export default class Profile extends PureComponent {
   render() {
     return (
@@ -46,7 +48,7 @@ export default class Profile extends PureComponent {
           </li>
         </ul>
         <Col md="12">
-          <a className="btn site-btn icon stretched-link" href="https://www.dropbox.com/s/ov5ns04b5x28r5u/Resume.docx?dl=0" rel="noopener noreferrer" target="_blank">
+          <a className="btn site-btn icon stretched-link" href={resume} rel="noopener noreferrer" target="_blank">
             {/* <button className="btn site-btn icon"> */}
               Download Cv <DownloadIcon />
             {/* </button> */}

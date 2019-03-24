@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack');
 const merge = require("webpack-merge");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const CircularDependencyPlugin = require("circular-dependency-plugin");
@@ -13,6 +14,7 @@ module.exports = merge(config, {
   devServer: {
     contentBase: "dist",
     publicPath: "/",
+    hot: true,
     historyApiFallback: {
       index: "index.html"
     }
@@ -23,6 +25,7 @@ module.exports = merge(config, {
       open: true,
       ghostMode: false
     }),
+    new webpack.HotModuleReplacementPlugin(),
     new CircularDependencyPlugin({
       exclude: /node_modules/
     })

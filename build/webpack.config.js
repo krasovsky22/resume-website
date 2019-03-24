@@ -12,8 +12,8 @@ module.exports = {
   },
   output: {
     publicPath: "/",
-    filename: "[name].[contentHash].js",
-    chunkFilename: "[name].[chunkhash].js"
+    filename: "[name].[hash].js",
+    chunkFilename: "[name].[hash].js"
   },
   module: {
     rules: [
@@ -50,6 +50,15 @@ module.exports = {
         test: /\.s?css$/,
         exclude: /bootstrap\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(pdf|gif|png|jpe?g|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
       }
     ]
   },
@@ -60,6 +69,7 @@ module.exports = {
       src: resolve("src"),
       icons: resolve("src/components/icons"),
       links: resolve("src/components/links"),
+      files: resolve("src/components/files"),
       lodash$: "lodash-es"
     }
   },
