@@ -1,14 +1,14 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "resume-website-20190412212338-authRole",
-            "UnauthRoleArn": "arn:aws:iam::481162063872:role/resume-website-20190412212338-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::481162063872:role/resume-website-20190412212338-authRole",
+            "AuthRoleName": "resume-website-20190412224755-authRole",
+            "UnauthRoleArn": "arn:aws:iam::481162063872:role/resume-website-20190412224755-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::481162063872:role/resume-website-20190412224755-authRole",
             "Region": "us-east-2",
-            "DeploymentBucketName": "resume-website-20190412212338-deployment",
-            "UnauthRoleName": "resume-website-20190412212338-unauthRole",
-            "StackName": "resume-website-20190412212338",
-            "StackId": "arn:aws:cloudformation:us-east-2:481162063872:stack/resume-website-20190412212338/ec75b420-5da3-11e9-9551-06faad620df0"
+            "DeploymentBucketName": "resume-website-20190412224755-deployment",
+            "UnauthRoleName": "resume-website-20190412224755-unauthRole",
+            "StackName": "resume-website-20190412224755",
+            "StackId": "arn:aws:cloudformation:us-east-2:481162063872:stack/resume-website-20190412224755/b3883960-5daf-11e9-b229-0658482cfd4e"
         }
     }
 }
